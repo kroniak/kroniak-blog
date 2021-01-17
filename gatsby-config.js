@@ -107,6 +107,9 @@ module.exports = {
                 trackingIds: [
                     `G-WJ8JSBX9ZD`, // Google Analytics / GA
                 ],
+                gtagConfig: {
+                    anonymize_ip: true,
+                },
                 // This object is used for configuration specific to this plugin
                 pluginConfig: {
                     // Puts tracking script in the head instead of the body
@@ -114,6 +117,22 @@ module.exports = {
                     // Setting this parameter is also optional
                     respectDNT: true,
                 },
+            },
+        },
+        {
+            resolve: `gatsby-plugin-web-vitals`,
+            options: {
+                // The Google Analytics property ID; the reporting code won't be generated without it
+                trackingId: `G-WJ8JSBX9ZD`,
+                // An array with metrics you want to track and send to analytics
+                metrics: [`FID`, `TTFB`, `LCP`, `CLS`, `FCP`],
+                // Event Category (optional) { string }, default 'Web Vitals'
+                eventCategory: `Performance`,
+                // Include Web Vitals tracking in development
+                // Defaults to false meaning Vitals will only be tracked in production.
+                includeInDevelopment: false,
+                // Prints metrics in the console when true
+                debug: false,
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
