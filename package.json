@@ -24,14 +24,16 @@
     "develop": "gatsby develop",
     "build": "gatsby build --log-pages",
     "clean": "gatsby clean",
-    "config": "git update-index --skip-worktree .ghost.json",
-    "deploy": "gatsby build && echo 'demo.jamify.org' > public/CNAME && gh-pages -f -d public -b master -r git@github.com:styxlab/styxlab.github.io"
+    "serve": "gatsby build --log-pages && gatsby serve",
+    "config": "git update-index --skip-worktree .ghost.json"
   },
   "dependencies": {
     "gatsby": "^2.27.0",
     "gatsby-plugin-ackee-tracker": "^2.1.0",
+    "gatsby-plugin-google-gtag": "^2.6.0",
     "gatsby-plugin-netlify": "^2.6.0",
     "gatsby-plugin-preact": "^4.2.0",
+    "gatsby-plugin-web-vitals": "^1.0.3",
     "gatsby-rehype-ghost-links": "^1.6.5",
     "gatsby-rehype-prismjs": "^1.2.5",
     "gatsby-theme-ghost-dark-mode": "^1.8.5",
