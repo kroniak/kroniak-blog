@@ -1,6 +1,6 @@
 module.exports = {
     // Do not include a trailing slash!
-    siteUrl: `https://demo.jamify.org`,
+    siteUrl: `https://kroniak.net`,
 
     // Enable infinite scroll (default: true)
     infiniteScroll: true,
@@ -10,13 +10,13 @@ module.exports = {
     postsPerPage: 3,
 
     // This allows an alternative site title for meta data for pages.
-    siteTitleMeta: `Gatsby Starter Ghost CMS`,
+    siteTitleMeta: `Kroniak NET Blog`,
 
     // This allows an site description for meta data for pages.
-    siteDescriptionMeta: `Turn your Ghost blog into a flaring fast static site with Gatsby`,
+    siteDescriptionMeta: `Kroniak's blog about dev and technologies`,
 
     // Used for App and Offline manifest e.g. Mobile Home Screen
-    shortTitle: `Jamify`,
+    shortTitle: `Kroniak Blog`,
     siteIcon: `favicon.png`,
     backgroundColor: `#e9e9e9`,
     themeColor: `#15171A`,

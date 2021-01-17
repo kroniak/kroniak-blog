@@ -1,40 +1,11 @@
-<p align="center">
-  <a href="https://www.jamify.org">
-    <img alt="Jamify" src="https://avatars0.githubusercontent.com/u/73162720?s=200&v=4" />
-  </a>
-</p>
-<h1 align="center">
-  Jamify's blog starter <br/>
-</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c247c735-9273-4d26-8722-194f27a32f19/deploy-status)](https://app.netlify.com/sites/kroniak-blog/deploys)
 
-[![Released under MIT license.](https://badgen.net/github/license/micromatch/micromatch)](https://github.com/styxlab/gatsby-starter-try-ghost/blob/master/LICENSE)
-[![gatsby-starter-try-ghost npm package version.](https://badgen.net/npm/v/gatsby-starter-try-ghost)](https://www.npmjs.org/package/gatsby-starter-try-ghost)
-
-A [Gatsby](https://www.gatsbyjs.org/) starter for creating blogs from headless [Ghost CMS](https://ghost.org/changelog/jamstack/).
-
-Turn your Ghost blog into a flaring fast static website. This Gatsby theme is a front-end replacement of the Ghost Handlebars engine featuring an enhanced Ghost Casper look and feel. All content is sourced from a headless Ghost CMS.
-
-&nbsp;
-
-## 🔥 Variants
-
-Favor [Next.js](https://nextjs.org/) over Gatsby? Head over to [next-cms-ghost](https://github.com/styxlab/next-cms-ghost)!
-
+Kroniak blog
 &nbsp;
 
 ## 🎓 Tutorials
 
 Check out the [Tutorials](https://www.jamify.org) for practical guides on using this project.
-
-&nbsp;
-
-## 🎉 Demo
-
-> Play with the [Demo](https://demo.jamify.org/) to get a first impression.
-
-[![gatsby-starter-try-ghost](https://static.gotsby.org/v1/assets/images/jamify-demo.png)](https://styxlab.github.io)
-
-&nbsp;
 
 ## ✨ Features
 
@@ -83,66 +54,6 @@ Additional features can be integrated by installing Gatsby themes or plugins. Th
 
 &nbsp;
 
-## 🏁 Getting Started
-
-1. Install this starter by running
-
-    ```bash
-    gatsby new try-ghost https://github.com/styxlab/gatsby-starter-try-ghost
-    ```
-
-2. Change directory
-
-    ```bash
-    cd try-ghost
-    ```
-
-3. Run
-
-    ```bash
-    yarn develop
-    ```
-
-    and visit your site at `http://localhost:8000`.
-
-&nbsp;
-
-## 💡 Configure
-
-```js
-//siteConfig.js
-module.exports = {
-    // Do not include a trailing slash!
-    siteUrl: `https://your-blog.com`,
-
-    // Maximum number of post shown per page
-    // Infinite Scroll: Initial chunk of posts, subsequent posts are fetched one by one
-    postsPerPage: 3,
-
-    // This allows an alternative site title for meta data for pages.
-    siteTitleMeta: `Gatsby Starter Ghost CMS`,
-
-    // This allows an site description for meta data for pages.
-    siteDescriptionMeta: `Turn your Ghost blog into a flaring fast static site with Gatsby`,
-
-    // Used for App and Offline manifest e.g. Mobile Home Screen
-    shortTitle: `Ghost`,
-    siteIcon: `favicon.png`,
-    backgroundColor: `#e9e9e9`,
-    themeColor: `#15171A`,
-
-    // Include Gatsby images for lazy loading and image optimizations (default: true)
-    gatsbyImages: true,
-
-    // Overwrite navigation menu (default: []), label is case sensitive
-    // overwriteGhostNavigation: [{ label: `Home`, url: `/` }],
-};
-```
-
-In the configuration shown above, the most important fields to be changed are `siteUrl`, `siteTitleMeta` and `siteDescriptionMeta`. Update at least those to fit your needs.
-
-&nbsp;
-
 ## 🔑 Ghost Content API keys
 
 All content is sourced from a Ghost CMS. By default, content is fetched from the demo location at `https://cms.gotsby.org`. Surely you want to source your own content. There are two ways to make your content keys available. Choose the method according to your build scenario.
@@ -183,14 +94,6 @@ This file is part of `.gitignore` to avoid accidentally publishing it to your pu
 ## 🤯 Ensure headless mode of Ghost CMS
 
 For best SEO results it is strongly recommended to disable the default Ghost Handlebars theme front-end by selecting the _Make this site private_ flag within your Ghost admin settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the authoritative source for search engines.
-
-&nbsp;
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/styxlab/gatsby-starter-try-ghost)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/styxlab/gatsby-starter-try-ghost)
 
 &nbsp;
 
