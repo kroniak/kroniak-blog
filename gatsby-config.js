@@ -37,7 +37,10 @@ try {
         },
     }
 } finally {
-    const { apiUrl, contentApiKey } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
+    const {
+        apiUrl,
+        contentApiKey,
+    } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
 
     if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
         ghostConfig = null //allow default config to take over
@@ -95,6 +98,22 @@ module.exports = {
                         resolve: `gatsby-rehype-prismjs`,
                     },
                 ],
+            },
+        },
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+                // You can add multiple tracking ids and a pageview event will be fired for all of them.
+                trackingIds: [
+                    `G-WJ8JSBX9ZD`, // Google Analytics / GA
+                ],
+                // This object is used for configuration specific to this plugin
+                pluginConfig: {
+                    // Puts tracking script in the head instead of the body
+                    head: true,
+                    // Setting this parameter is also optional
+                    respectDNT: true,
+                },
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
