@@ -34,6 +34,7 @@
     "gatsby-plugin-netlify": "^2.6.0",
     "gatsby-plugin-preact": "^4.2.0",
     "gatsby-plugin-web-vitals": "^1.0.3",
+    "gatsby-plugin-yandex-metrika": "^2.5.0",
     "gatsby-rehype-ghost-links": "^1.6.5",
     "gatsby-rehype-prismjs": "^1.2.5",
     "gatsby-theme-ghost-dark-mode": "^1.8.5",
