@@ -28,7 +28,7 @@
     "config": "git update-index --skip-worktree .ghost.json"
   },
   "dependencies": {
-    "gatsby": "^2.27.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-ackee-tracker": "^2.1.0",
     "gatsby-plugin-google-gtag": "^2.6.0",
     "gatsby-plugin-netlify": "^2.6.0",
